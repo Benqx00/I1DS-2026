@@ -44,6 +44,54 @@ let multiplicacao = num1 * num2;
 let divisao = num1 / num2;
 let restoDivisao = num1 % num2;
 
-// imprimir as operacoes
-console.log("somando ", num1, " + ", num2, " = ", soma);
-console.log("o resto da divisao do ", num1, "por ", num2, " = ", restoDivisao);
+// Imprimir as operações
+console.log("Somando ", num1, " + ", num2, " = ", soma);
+console.log("O Resto da Divisão do ", num1, " por ", num2, " = ", restoDivisao);
+
+/* 
+    Operadores de Comparação
+    == -> Comparação de Igualdade
+    != -> Diferente
+    >  -> Maior que
+    <  -> Menor que
+    >= -> Maior ou Igual
+    <= -> Menor ou Igual
+    === -> Exatamente Igual (Valor e tipo de variavel)
+
+    Retorna 'true' ou 'false'  | Verdadeiro ou Falso
+*/
+
+console.log("O Numero 1 é Igual ao Numero 2?", num1==num2);
+console.log("O Numero 1 é Maior ou Igual ao Numero 2?", num1>=num2);
+console.log("O Numero 1 é Menor que o Numero 2?", num1<num2);
+
+/* 
+    Operadores Lógicos
+
+    && (AND "E") -> Retorna verdadeiro se todas as clausulas forem verdadeiras
+    || (OR "Ou") -> Retorna verdadeiro se ao uma das clausulas forem verdadeiras
+    ! (NOT "Negação") -> Operador de Negação (Inverte o valor lógico)
+*/
+
+let sexo = "Feminino";
+let idadeAluno = 17;
+
+console.log("É sexo Masculino ou tem 17 ou mais anos de idade? ",(sexo == "Masculino") || (idadeAluno >= 17));
+
+console.log("É sexo Masculino e tem 17 ou mais anos de idade? ",(sexo == "Masculino") && (idadeAluno >= 17));
+
+console.log("É sexo Masculino e tem 17 ou mais anos de idade? ",!((sexo == "Masculino") && (idadeAluno >= 17)));
+
+
+// Concatenando strings (somando texto)
+
+let n1 = "20";
+let n2 = 10;
+
+console.log(n1+n2);
+console.log("20"+n2);
+
+var primeiroNome = "Cristiano";
+var sobreNome = " de Paula";
+
+console.log(primeiroNome+sobreNome);
