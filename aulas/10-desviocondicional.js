@@ -80,4 +80,4 @@ if(preco <= 100){
 }else{
     resultado = "vish, ta caro";
 }
-console.log("preço:", preco, "-", resultado);
+console.log("preço:", preco, "-", resultado);;
