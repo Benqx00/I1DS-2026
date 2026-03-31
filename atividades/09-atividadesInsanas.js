@@ -362,3 +362,66 @@ console.log("Vetor após multiplicar por 2:");
 for (let i = 0; i < listaValoresss.length; i++) {
   console.log(listaValoresss[i]);
 }
+
+//           PARTE 6
+
+let matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+
+// 43
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        console.log(matriz[i][j]);
+    }
+}
+
+// 44
+for (let i = 0; i < 3; i++) console.log(matriz[i][i]);
+
+// 45
+for (let i = 0; i < 3; i++) console.log(matriz[i][2 - i]);
+
+// 46
+let somaM = 0;
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) somaM += matriz[i][j];
+}
+console.log("Soma:", somaM);
+
+// 47
+let maiorM = matriz[0][0];
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        if (matriz[i][j] > maiorM) maiorM = matriz[i][j];
+    }
+}
+console.log("Maior:", maiorM);
+
+// 48
+let X = 2;
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) matriz[i][j] *= X;
+}
+console.log(matriz);
+
+// 49
+let count = 0;
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        if (matriz[i][j] > 10) count++;
+    }
+}
+console.log("Maiores que 10:", count);
+
+// 50
+for (let i = 0; i < 3; i++) {
+    let linha = "[ ";
+    for (let j = 0; j < 3; j++) {
+        linha += matriz[i][j] + " ";
+    }
+    linha += "]";
+    console.log(linha);
+}
